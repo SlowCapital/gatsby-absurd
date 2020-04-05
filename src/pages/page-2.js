@@ -8,7 +8,7 @@ const SecondPage = () => (
   <Layout>
     <Container>
       <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
+      <p>Welcome to page 2. Also known as the second page.</p>
       <Link to="/">Go back to the homepage</Link>
     </Container>
   </Layout>
