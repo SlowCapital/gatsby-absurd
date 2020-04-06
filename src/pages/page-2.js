@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '@common/Layout';
+import Navbar from '@common/Navbar';
 import { Container } from '@components/global';
+import Footer from '@sections/Footer';
 
 const SecondPage = () => (
   <Layout>
