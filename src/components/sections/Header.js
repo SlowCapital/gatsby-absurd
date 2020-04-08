@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container } from '@components/global';
+
+import { Link } from 'gatsby';
+import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
@@ -23,6 +25,7 @@ const Header = () => (
       }
     `}
     render={data => (
+      <Section id="home">
       <HeaderWrapper>
         <Container>
           <Grid>
@@ -39,14 +42,18 @@ const Header = () => (
               </h1>
               <br />
               <p>
+                The <Link to="/page-2">second page</Link> in progress. &nbsp;&#x2794;
                 <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <br />
+                  External Link Component &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
           </Grid>
         </Container>
+        
       </HeaderWrapper>
+      </Section>
     )}
   />
 );
