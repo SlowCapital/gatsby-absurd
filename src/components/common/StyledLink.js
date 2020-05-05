@@ -6,10 +6,11 @@ const Link = ({ href, className, children }) => (
     {children}
   </a>
 );
+  
+const StyledLink = styled(Link)`
+  color: #ff5a5f;
+  font-weight: normal;
+  text-decoration: none;
+`;
 
-const ExternalLink = styled(Link)`
-    color: blue;
-    font-weight: normal;
-  `;
-
-export default ExternalLink;
+export default StyledLink;
